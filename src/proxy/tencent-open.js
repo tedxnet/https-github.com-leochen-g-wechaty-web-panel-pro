@@ -153,7 +153,7 @@ function getFormatReply(answer, options = [], userInfo, puppetType) {
 async function getTencentOpenReply({ msg, id, userInfo }) {
   const config = await allConfig()
   if (!config.tencentAESKey || !config.tencentToken) {
-    console.log('请到智能微秘书平台配置AESKey 和token 参数方可使用')
+    console.log('请到平台配置AESKey 和token 参数方可使用')
     return [{ type: 1, content: '请到平台配置AESKey 和token 参数方可使用' }]
   }
   try {

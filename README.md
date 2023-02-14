@@ -1,12 +1,11 @@
 # Wechaty Web Panel
 
-[![Wechaty Plugin Web Panel](https://img.shields.io/badge/Wechaty%20Plugin-WebPanel-brightgreen.svg)](https://github.com/gengchen528/wechaty-web-panel)
+
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/Wechaty/wechaty)
-[![NPM Version](https://badge.fury.io/js/wechaty-web-panel.svg)](https://www.npmjs.com/package/wechaty-web-panel)
+[![NPM Version](https://badge.fury.io/js/wechaty-web-panel-pro.svg)](https://www.npmjs.com/package/wechaty-web-panel-pro)
 
 Wechaty Web Panel 插件，让你的 wechaty 机器人快速接入 web 控制面板
 
-本项目为面板源码，如需可直接运行的项目，请直接拉取 [https://github.com/leochen-g/wechat-assistant-pro](https://github.com/leochen-g/wechat-assistant-pro) 即可
 
 ## 面板主要功能
 
@@ -120,13 +119,13 @@ Wechaty Web Panel 插件，让你的 wechaty 机器人快速接入 web 控制面
 ### Step 1: 安装
 
 ```
-$ npm install wechaty-web-panel@latest wechaty@latest --save
+$ npm install wechaty-web-panel-pro@latest wechaty@latest --save
 ```
 
 如果安装长时间没有反应，可以尝试
 
 ```
-npm install wechaty-web-panel@latest wechaty@latest --save
+npm install wechaty-web-panel-pro@latest wechaty@latest --save
 ```
 
 ### Step 2: 创建机器人并配置插件的`apiKey`和`apiSecret`
@@ -135,7 +134,7 @@ npm install wechaty-web-panel@latest wechaty@latest --save
 $ vim mybot.js
 
 const {WechatyBuilder} = require('wechaty')
-const WechatyWebPanelPlugin = require('wechaty-web-panel')
+const WechatyWebPanelPlugin = require('wechaty-web-panel-pro')
 
 const name = 'wechat-assistant'
 

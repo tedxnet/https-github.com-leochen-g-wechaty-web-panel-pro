@@ -6,7 +6,7 @@ let chatOption = {};
 export async function initChatGPT() {
   const config = await allConfig()
   if (!config.gpttoken) {
-    console.log('请到智能微秘书平台配置Openai apikey参数方可使用')
+    console.log('请到平台配置Openai apikey参数方可使用')
     return [{ type: 1, content: '请到平台配置Openai apikey参数方可使用' }]
   }
   console.log('config.gpttoken', config.gpttoken);
@@ -19,7 +19,7 @@ async function geGPT3Reply(content, uid) {
   try {
     const config = await allConfig()
     if (!config.gpttoken) {
-      console.log('请到智能微秘书平台配置Openai apikey参数方可使用')
+      console.log('请到平台配置Openai apikey参数方可使用')
       return [{ type: 1, content: '请到平台配置Openai apikey参数方可使用' }]
     }
     if(!chatGPT) {

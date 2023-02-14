@@ -405,7 +405,7 @@ async function putqn(base, name) {
     }
     let content = await req(options)
     console.log('上传结果', content.key)
-    return 'https://img.aibotk.com/' + content.key
+    return 'https://panel-img.tedx.net/' + content.key
   } catch (e) {
     console.log('上传失败', e.Error)
   }
